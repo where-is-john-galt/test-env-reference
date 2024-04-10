@@ -4,6 +4,6 @@ import 'dotenv/config';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return process.env.TEST_CONNECTION_STRING;
+    return 'connection string: ' + process.env.TEST_CONNECTION_STRING;
   }
 }
